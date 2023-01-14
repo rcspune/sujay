@@ -1,0 +1,153 @@
+<html>
+	<Head>
+		<title>
+			Car Price Prediction
+		</title>
+		<link href="/static/car_price.css" rel="Stylesheet" type="text/css">
+	</Head>
+	
+	
+	
+	
+	<body id='main'>
+		<h1 style="color:yellow"><b>
+		Car Price Prediction
+		<b></h1>
+		
+		
+		<h2 style="color:gray"><b><u>
+		Please Fill The Form
+		</u></b></h2>
+	<form method="post" action="/predict">
+		<center>
+			<table border="1">
+				<colgroup>
+					<col span="2" style="background-color: #D6EEEE">
+					<col span="1">
+					<col span="2" style="background-color: pink">
+					<col span="1">
+					<col span="2" style="background-color: coral">
+					
+				</colgroup>
+					<tr>
+						<td class="columns">
+							<lable style="color:brown"><b>
+								Car Name:
+							</b></lable>
+						</td>
+						
+						<td>
+							<input type="text" name="txtname" placeholder="Enter Car Model Name" required>
+						</td>
+						<!--Empty data for column spacing-->
+						<td class="colspacer"></td>
+						<td class="columns">
+							<lable style="color:rgb(64, 14, 103)"><b>
+								Year:
+							</b></lable>
+						</td>
+							
+						<td>
+							<input type="year" name="txtyear" placeholder="Enter model year" required>
+						</td>
+						<!--Empty data for column spacing-->
+						<td class="colspacer"></td>
+						<td class="columns">
+							<lable><b>
+								Present Price:
+							</b></lable>
+						</td>
+						
+						<td>
+							<input type="text" name="txtprice" placeholder="Enter Present Price" required>
+						</td>
+					</tr>
+					<!-- Empty row for spacing -->
+					<tr class="rowspacer"></tr> 
+					<tr>
+						<td class="columns">
+							<lable><b>
+								Kilometer's Driven:
+							</b></lable>
+						</td>
+						<td>
+							<input type="text" name="txtkms" placeholder="Enter Kilometer's Driven" required>
+						</td>
+						<!--Empty data for column spacing-->
+						<td class="colspacer"></td>
+						<td class="columns">
+							<lable><b>
+							Fuel Type:
+							</b></lable>
+						</td>
+						<td>
+							<select name="radfuel">
+								<option value="Diesel">
+									Diesel
+								</option>
+								<option value="Petrol">
+									Petrol
+								</option>
+								<option value="CNG">
+									CNG
+								</option>
+							</select>
+							<!-- By using Radio buttons
+							<span id="fuel0"><input type="radio"  name="radfuel" value="Diesel">Diesel</span>
+							<span  id="fuel1"><input type="radio" name="radfuel"value="Petrol">Petrol</span>
+							<span  id="fuel2"><input type="radio" name="radfuel"value="CNG">CNG</span>
+							-->
+						</td>
+						<!--Empty data for column spacing-->
+						<td class="colspacer"></td>
+						<td class="columns">
+							<lable><b>
+								Seller Type:
+							</b></lable>
+						</td>
+						<td>
+							<span id="seller0"><input type="radio"  name="radseller" value="Dealer">Dealer</span>
+							<span  id="seller1"><input type="radio" name="radseller" value="Individual">Individual</span>
+						</td>
+					</tr>
+					<!-- Empty row for spacing -->
+					<tr class="rowspacer"></tr> 
+					<tr>
+						<td class="columns">
+							<lable><b>
+								Transmission:
+							</b></lable>
+						</td>
+						<td>
+							<span id="trans0"><input type="radio"  name="radtrans" value="Manual">Manual</span>
+							<span  id="trans1"><input type="radio" name="radtrans" value="Automatic">Automatic</span>
+						</td>
+						<!--Empty data for column spacing-->
+						<td class="colspacer"></td>
+						<td class="columns">
+							<lable><b>
+								Owner:
+							</b></lable>
+						</td>
+						<td>
+							<span id="owner0"><input type="radio"  name="radowner" value="0">First Owner</span>
+							<span  id="owner1"><input type="radio" name="radowner" value="1">Second Owner</span>
+						</td>
+				
+					</tr>
+				
+			</table>
+			
+			
+			
+			<br>
+			<input type="submit" id="Submitbutton" name="btncarprice" value="Predict">
+			
+			
+
+
+
+		</center>
+	</form>
+	</Body>
+</html>
